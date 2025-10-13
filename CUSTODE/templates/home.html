@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
     <meta charset="UTF-8">
     <title>Car Security Project</title>
     <style>
@@ -15,6 +17,7 @@
             background: linear-gradient(135deg, #0a0a0f, #1a1a2e, #16213e);
             font-family: 'Arial', sans-serif;
             color: #fff;
+            text-align:centre;
         }
 
         h1 {
@@ -33,7 +36,14 @@
             margin-top:40px;
             text-align:center;
         }
-
+        .highlight-box{
+            padding:20px;
+            border:2px solid rgba(0,247,255,0.6);
+            border-radius:12px;
+            background:rgba(0,0,0,0.5);
+            box-shadow:0 0 15px rgba(0, 247, 255, 0.4)
+            
+        }
         
         
 
@@ -68,9 +78,12 @@
     <div class="container">
         <h2><span class="castellar">🚦CUSTODE</span>🚦</h2>
         <h1>🚗 Car Driving Education & Security</h1>
-        <button class="btn">Learn Driving Basics</button>
-        <button class="btn">Safety & Security Rules</button>
-        <button class="btn">Intrusion Alerts & Prevention</button>
+        <a href="{{ url_for('basics') }}">
+        <button class="btn">Learn Driving Basics</button></a>
+        <a href="{{ url_for('safety') }}">
+        <button class="btn">Safety & Security Rules</button></a>
+        <a href="{{ url_for('intrusion') }}">
+        <button class="btn">Intrusion Alerts & Prevention</button></a>
     </div>
 </body>
 </html>

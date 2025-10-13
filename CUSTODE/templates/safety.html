@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safety & Security Rules</title>
+    <style>
+        body { background: #0a0a0f; color: white; text-align: center; font-family: Arial; }
+        form { margin-top: 30px; }
+        select, button {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin: 10px;
+            font-size: 1em;
+        }
+        button {
+            background: linear-gradient(90deg, #00f7ff, #00ffaa);
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover { transform: scale(1.05); }
+        .result { margin-top: 20px; font-size: 1.2em; }
+        a { color: #00f7ff; text-decoration: none; display: block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🛡 Safety & Security Rules</h1>
+    <p>Question: What is the most important thing to do before starting the car?</p>
+    <form method="POST">
+        <select name="rule">
+            <option value="Seatbelt">Wear Seatbelt</option>
+            <option value="Phone">Check your phone</option>
+            <option value="Music">Play music</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+        <div class="result">{{ result }}</div>
+    {% endif %}
+
+    <a href="/">⬅ Back to Home</a>
+</body>
+</html>
+
