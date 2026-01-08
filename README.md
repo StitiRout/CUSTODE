@@ -1,9 +1,9 @@
-🚦 CUSTODE – Your Friendly Guardian
+# CUSTODE – Your Friendly Guardian
 Car Driving Education & Cybersecurity Awareness System
 
 Built with Flask · HTML · CSS · Python
 
-📌 Overview
+# Overview
 
 CUSTODE is an interactive web-based learning system designed to teach users:
 
@@ -19,7 +19,7 @@ Real-world intrusion awareness and cybersecurity alerts
 
 The goal is to combine driving education with basic vehicle cybersecurity concepts, making new drivers more aware and safer.
 
-🌟 Features
+# Features
 🚘 Driving Education Module
 
 Before-driving checklist
@@ -58,7 +58,8 @@ Visual warning indicators
 
 Prevention measures for vehicle safety
 
-🖼 Project Structure
+
+# Project Structure
 CUSTODE/
 │
 ├── app.py                # Main Flask backend
@@ -72,7 +73,7 @@ CUSTODE/
     ├── intrusion.html
     └── quiz.html
 
-🛠 Tech Stack
+# Tech Stack
 Frontend
 
 HTML5
@@ -93,7 +94,7 @@ Random module for quiz questions
 
 Bootstrap (optional styling)
 
-⚙️ How to Run the Project
+# How to Run the Project
 1️⃣ Install Dependencies
 pip install flask
 
@@ -106,7 +107,7 @@ Go to:
 
 http://127.0.0.1:5000
 
-📚 Future Enhancements
+# Future Enhancements
 
 Add more quiz levels (Beginner → Intermediate → Advanced)
 
